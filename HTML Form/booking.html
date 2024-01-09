@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Movie Booking</legend>
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" /><br/>
+                <br/>
+                <label for="number">ST-ID</label>
+                <input type="text" id="number" /><br/>
+                <br/> 
+                <label for="class">Class</label>
+                <input type="radio" id="radio1" name="check" value="ans1" />
+                <label for="radio1">1</label>
+                <input type="radio" id="radio2" name="check" value="ans2" />
+                <label for="radio2">2</label>
+                <input type="radio" id="radio3" name="check" value="ans3" />
+                <label for="radio3">3</label><br/>
+                <br/>
+                <label for="movie">Movie</label><br/>
+                <input type="radio" id="animal" name="movie" value="animal"/>
+                <label for="animal">Animal</label><br/>
+                <input type="radio" id="chitha" name="movie" value="chitha"/>
+                <label for="chitha">Chitha</label><br/>
+                <input type="radio" id="salar" name="movie" value="salar"/>
+                <label for="salar">Salar</label><br/>
+                <br/>
+                <label for="movie">Movie</label>
+                <select name="movie" id="movie">
+                    <option value="salar" id="salar" selected>Salar</option>
+                    <option value="chitha" id="chitha">Chitha</option>
+                </select>
+                <br/>
+                <br/>
+                <label>Pre-book Snacks</label><br/>
+                <input type="checkbox" id="popcorn"/>
+                <label for="popcorn">Popcorn</label><br/>
+                <input type="checkbox" id="puffs"/>
+                <label for="puffs">Puffs</label><br/>
+                <input type="checkbox" id="ice-cream"/>
+                <label for="ice-cream">Ice Cream</label><br/>
+                <br/>
+                <textarea name="message" rows="5" cols="20">Write yout message</textarea>
+                <br/>
+                <button type="button" onclick="alert('check it bruh')">Click It</button>
+                <br/><br/>
+                <label for="browser">Choose your browser from the list:</label>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <br/>
+                <br/>
+                <input type="submit" value="Submit" />
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        console.log('life sucks')
+        document.write('....')
+    </script>
+</body>
+</html>
